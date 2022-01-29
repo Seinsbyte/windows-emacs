@@ -1,0 +1,20 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("Dropbox"
+ (filename . "c:/Users/ppeda/Dropbox/")
+ (front-context-string . "Academic\n  -rw-r")
+ (rear-context-string . "096 2021-06-05  ")
+ (position . 374))
+("ahk"
+ (filename . "h:/programs/ahk/")
+ (front-context-string . "Functions.ahk~\n ")
+ (rear-context-string . "531 01-15 17:10 ")
+ (position . 447))
+("init.el"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . "(add-to-list 'pa")
+ (rear-context-string . "t-startup nil)\n\n")
+ (position . 84))
+)
