@@ -2,7 +2,32 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Dropbox"
+(("jobs"
+ (filename . "c:/Users/ppeda/OneDrive/Documents/jobs/")
+ (front-context-string . "NatureofWitches_")
+ (rear-context-string . "956 01-13 15:30 ")
+ (position . 242))
+("Htmlarticles"
+ (filename . "c:/Users/ppeda/OneDrive/Documents/Htmlarticles/")
+ (front-context-string)
+ (rear-context-string . "0 02-07 18:17 .\n")
+ (position . 193))
+("htmlarchive"
+ (filename . "c:/Users/ppeda/OneDrive/Documents/ArchiveHtmlarticles/htmlarchive/")
+ (front-context-string . "..\n  drwxrwxrwx ")
+ (rear-context-string . "096 02-08 11:06 ")
+ (position . 165))
+("ArchiveHtmlarticles"
+ (filename . "c:/Users/ppeda/OneDrive/Documents/ArchiveHtmlarticles/")
+ (front-context-string . "DIPM2A5.html\n  d")
+ (rear-context-string . "394 02-07 12:30 ")
+ (position . 249))
+("POR-my-abbrev.el"
+ (filename . "~/.emacs.d/lisp/POR-my-abbrev.el")
+ (front-context-string . ";; -*- coding: u")
+ (rear-context-string)
+ (position . 1))
+("Dropbox"
  (filename . "c:/Users/ppeda/Dropbox/")
  (front-context-string . "Academic\n  -rw-r")
  (rear-context-string . "096 2021-06-05  ")

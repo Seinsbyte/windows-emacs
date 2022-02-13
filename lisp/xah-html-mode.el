@@ -1,4 +1,3 @@
-;;; xah-html-mode.el --- Major mode for editing html. -*- coding: utf-8; lexical-binding: t; -*-
 
 ;; Copyright © 2013-2021, by Xah Lee
 
@@ -4717,6 +4716,8 @@ Version 2016-10-24"
 
     ("cdata" "<![CDATA[▮]]>" xah-html--ahf)
 
+    ("zsp" "</span>" xah-html--ahf)
+    
     ("cl" "class=\"▮\"" xah-html--ahf)
     ("idh" "id=\"▮\"" xah-html--ahf)
     ("posterh" "poster=\"▮\"" xah-html--ahf)
@@ -4941,6 +4942,13 @@ Version 2016-10-24"
   "face for span tag content."
   :group 'xah-html-mode )
 
+(defface xah-html-span-cloze
+  '(
+    (t :background "yellow"))
+  "face for clozes."
+  :group 'xah-html-mode )
+
+
 ;; temp for debugging
 (face-spec-set
  'xah-html-span-f
@@ -4964,8 +4972,7 @@ Version 2016-10-24"
  )
 
 (setq xah-html-font-lock-keywords
-      (let (
-            (htmlElementNamesRegex (regexp-opt xah-html-html5-tag-list 'words))
+      (let ((htmlElementNamesRegex (regexp-opt xah-html-html5-tag-list 'words))
             (htmlAttributeNamesRegexp (regexp-opt xah-html-attribute-names 'words))
             (htmlBooleanAttributeNamesRegexp (regexp-opt xah-html-boolean-attribute-names 'words))
             (cssPropertieNames (regexp-opt xah-css-property-names 'words))
@@ -4981,9 +4988,7 @@ Version 2016-10-24"
             (textNodeRegex "\\([^<]+?\\)") ; ← hack, to avoid multi-line
 
             )
-        `(
-
-          ("<!--\\|-->" . font-lock-comment-delimiter-face)
+        `(("<!--\\|-->" . font-lock-comment-delimiter-face)
 
           ;; todo these multiline regex are very slow when there are long lines.
           (,(format "<!--%s-->" textNodeRegex) . (1 font-lock-comment-face))
@@ -4996,7 +5001,10 @@ Version 2016-10-24"
           (,(format "<mark%s>%s</mark>" attriRegex textNodeRegex) . (1 'xah-html-mark-f))
           (,(format "<b>%s</b>" textNodeRegex) . (1 'bold))
           (,(format "<b%s>%s</b>" attriRegex textNodeRegex) . (1 'bold))
-
+;; Seins
+	  (,(format "<i>%s</i>" textNodeRegex) . (1 'italic))
+          (,(format "<i%s>%s</i>" attriRegex textNodeRegex) . (1 'italic))
+;; /Seins
           (,(format "“%s”" textNodeRegex) . 'xah-html-double-curly-quote-f)
 
           ;; (,"=\"\\([-_/.A-Za-z0-9]+?\\)\"" . (1 'font-lock-string-face))
