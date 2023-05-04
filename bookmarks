@@ -2,7 +2,27 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("jobs"
+(("org-capture-last-stored"
+ (filename . "c:/Users/ppeda/Dropbox/wikorg/todo.org")
+ (front-context-string . "** TODO trocar a")
+ (rear-context-string . "ey.org::*.][.]]\n")
+ (position . 676))
+("Books"
+ (filename . "h:/Books/")
+ (front-context-string . "Ancient\n  drwxrw")
+ (rear-context-string . "  0 12-21 14:50 ")
+ (position . 214))
+("Cursos"
+ (filename . "h:/Cursos/")
+ (front-context-string . "Clipping DI\n  dr")
+ (rear-context-string . "  0 02-02 18:44 ")
+ (position . 231))
+("lisp"
+ (filename . "~/.emacs.d/lisp/")
+ (front-context-string . "ENG-my-abbrev.el")
+ (rear-context-string . "804 01-29 09:27 ")
+ (position . 248))
+("jobs"
  (filename . "c:/Users/ppeda/OneDrive/Documents/jobs/")
  (front-context-string . "NatureofWitches_")
  (rear-context-string . "956 01-13 15:30 ")
